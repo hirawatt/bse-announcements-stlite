@@ -1,0 +1,3 @@
+[submodule "BSE_NSE_Announcement"]
+	path = BSE_NSE_Announcement
+	url = https://github.com/hirawatt/BSE_NSE_Announcement.git

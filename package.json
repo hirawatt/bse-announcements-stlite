@@ -1,0 +1,23 @@
+{
+  "name": "BSE Announcements",
+  "version": "0.1.0",
+  "main": "./build/electron/main.js",
+  "scripts": {
+    "dump": "dump-stlite-desktop-artifacts",
+    "serve": "NODE_ENV=\"production\" electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "build": {
+    "files": ["build/**/*"],
+    "directories": {
+      "buildResources": "assets"
+    }
+  },
+  "devDependencies": {
+    "@stlite/desktop": "^0.21.0",
+    "electron": "22.0.0",
+    "electron-builder": "^23.6.0"
+  }
+}
